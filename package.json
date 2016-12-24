@@ -1,0 +1,21 @@
+{
+  "name": "wikipedia-viewer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "live": "budo app.js:prod.js --live",
+    "bundle": "browserify app.js -t [babelify --presets [es2015]] | uglifyjs >prod.js",
+    "github": "git add * && git commit && git push origin master"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.1.0"
+  },
+  "devDependencies": {
+    "budo": "^8.3.0"
+  }
+}

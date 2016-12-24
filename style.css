@@ -1,0 +1,35 @@
+body{
+  background-color: #092B40;
+  color:white;
+}
+
+#search{
+  display:block;
+  margin: 300px auto 20px auto;
+  background-color: #092B40;
+  border: 3px solid #D96F32;
+  border-radius: 100%;
+  line-height: 2rem;
+  width:2rem;
+  padding: 0.5px;
+  transition: width 1s, margin-top 1s;
+  color:white;
+  font-size:1.5rem;
+}
+
+#search:focus{
+  width:200px;
+  border-radius: 1rem;
+}
+
+#results{
+  list-style-type: none;
+  max-width:800px;
+  margin: 0 auto;
+}
+
+#results li{
+  background-color: rgba(255,255,255,0.1);
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
